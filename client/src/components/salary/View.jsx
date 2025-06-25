@@ -17,7 +17,7 @@ const View = () => {
       try {
         //console.log(id);
         const response = await axios.get(
-          `http://localhost:4000/api/salary/${id}`,
+          `https://worksphere-qbfu.onrender.com/api/salary/${id}`,
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
