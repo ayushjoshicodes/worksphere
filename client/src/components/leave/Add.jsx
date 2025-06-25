@@ -22,7 +22,7 @@ const Add = () => {
         
         try{
           
-            const response= await axios.post(`http://localhost:4000/api/leave/add`,leave,{
+            const response= await axios.post(`https://worksphere-qbfu.onrender.com/api/leave/add`,leave,{
               headers:{
                 "Authorization":`Bearer ${localStorage.getItem('token')}`
               }
