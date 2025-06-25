@@ -138,7 +138,7 @@ const Table = () => {
 
   const fetchLeaves = async () => {
     try {
-      const response = await axios.get("http://localhost:4000/api/leave", {
+      const response = await axios.get("https://worksphere-qbfu.onrender.com/api/leave", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
