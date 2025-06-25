@@ -114,7 +114,7 @@ const List = () => {
     if (!user?._id) return; // wait until user is loaded
     try {
       const response = await axios.get(
-        `http://localhost:4000/api/leave/${id}`,
+        `https://worksphere-qbfu.onrender.com/api/leave/${id}`,
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
