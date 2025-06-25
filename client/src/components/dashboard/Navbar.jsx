@@ -18,7 +18,7 @@
 // export default Navbar;
 
 import React from "react";
-import { useAuth } from "../../context/AuthContext";
+import { useAuth } from "../../context/authContext.jsx";
 import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
