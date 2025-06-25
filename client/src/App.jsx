@@ -22,7 +22,7 @@ import AddLeave from "./components/leave/Add"
 import Setting from "./components/EmployeeDashboard/Setting";
 import Table from "./components/leave/Table";
 import Details from "./components/leave/Details";
-import Leave from "../../server/models/leave";
+
 
 function App() {
   return (
