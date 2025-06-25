@@ -43,7 +43,7 @@ const handleChange= async(e)=>{
 
   
     try{
-                const response = await axios.post(`http://localhost:4000/api/salary/add`, salary, {
+                const response = await axios.post(`https://worksphere-qbfu.onrender.com/api/salary/add`, salary, {
                     headers:{
                         "Authorization" : `Bearer ${localStorage.getItem('token')}`
                     }
