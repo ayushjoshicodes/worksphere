@@ -96,7 +96,7 @@ function DepartmentList() {
   const fetchDepartments = async () => {
     setLoading(true);
     try {
-      const res = await axios.get('http://localhost:4000/api/department', {
+      const res = await axios.get('https://worksphere-qbfu.onrender.com/api/department', {
         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
       });
 
