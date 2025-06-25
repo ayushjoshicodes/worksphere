@@ -10,7 +10,7 @@ const Details = () => {
         const fetchLeave=async()=>{
            
             try{
-              const response= await axios.get(`http://localhost:4000/api/leave/details/${id}`,{
+              const response= await axios.get(`https://worksphere-qbfu.onrender.com/api/leave/details/${id}`,{
                 headers:{
                   "Authorization":`Bearer ${localStorage.getItem('token')}`
                 }
@@ -30,7 +30,7 @@ const Details = () => {
 
     const changeStatus = async (id,status)=>{
         try{
-              const response= await axios.put(`http://localhost:4000/api/leave/${id}`,{status},{
+              const response= await axios.put(`https://worksphere-qbfu.onrender.com/api/leave/${id}`,{status},{
                 headers:{
                   "Authorization":`Bearer ${localStorage.getItem('token')}`
                 }
