@@ -10,7 +10,7 @@ const AdminSummary = () => {
     const fetchSummary = async()=>{
       try {
         const summary = await axios.get(
-          "http://localhost:4000/api/dashboard/summary",
+          "https://worksphere-qbfu.onrender.com/api/dashboard/summary",
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
