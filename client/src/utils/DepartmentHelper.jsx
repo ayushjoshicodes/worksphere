@@ -25,7 +25,7 @@ export const DepartmentButtons=({_id, onDepartmentDelete})=>{
         try{
             if (!id) return console.error("No _id provided to delete button");
 
-            const response= await axios.delete(`http://localhost:4000/api/department/${id}`,{
+            const response= await axios.delete(`https://worksphere-qbfu.onrender.com/api/department/${id}`,{
               headers:{
                 "Authorization":`Bearer ${localStorage.getItem('token')}`
               }
