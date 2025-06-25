@@ -10,7 +10,7 @@ const View = () => {
         const fetchEmployee=async()=>{
            
             try{
-              const response= await axios.get(`http://localhost:4000/api/employee/${id}`,{
+              const response= await axios.get(`https://worksphere-qbfu.onrender.com/api/employee/${id}`,{
                 headers:{
                   "Authorization":`Bearer ${localStorage.getItem('token')}`
                 }
